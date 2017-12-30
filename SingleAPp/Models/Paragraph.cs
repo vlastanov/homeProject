@@ -1,65 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace SingleAPp.Models
 {
     class Paragraph
     {
-        
-        public string SplitIntoSentences(string current)
+        private string content;
+
+        public Paragraph(string content)
         {
-            var builder = new StringBuilder();
-
-            current = current.Trim('\t');
-            var sens = current
-            .Split(new string[] { ". ", "! ", "? " }, StringSplitOptions.None);
-
-            for (int j = 0; j < sens.Length; j++)
-            {
-                var sentes = sens[j];
-                if (sentes=="") continue;
-                
-                if (containsDash(sentes,"— ")) continue;
-
-                var containsComa = sentes.Contains(", ");
-                if (containsComa)
-                {
-                    sentes = ReplaceFirst(sentes, ", ", ",\r\n\t");
-                    if (containsComa)
-                    {
-                        sentes = ReplaceFirst(sentes,", ", ",\r\n\t\t");
-                    }
-                }
-
-                builder.Append(j + " ");
-                if (j==sens.Length-1)
-                {
-                    builder.Append(sentes);
-                }
-                else
-                {
-                    builder.AppendLine(sentes);
-                }
-            }
-            var sentences = builder.ToString();
-            return sentences;
+            this.content = content;
         }
 
-        public string ReplaceFirst(string text, string search, string replace)
+        public override string ToString()
         {
-            int pos = text.IndexOf(search);
-            if (pos < 0)
-            {
-                return text;
-            }
-            return text.Substring(0, pos) + replace + text.Substring(pos + search.Length);
+            return this.content;
         }
-
-        Func<string,string, bool> containsDash = (current,spice) =>
-        {
-            var containsDash = current.Contains(spice);
-            return containsDash;
-         };
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace SingleAPp.Models
 {
@@ -9,37 +10,49 @@ namespace SingleAPp.Models
     {
         private string content;
 
+        public List<string> glavi = new List<string>();
+        public List<string> paragraphs = new List<string>();
+        public List<string> sentences = new List<string>();
+
         public WholeBook(string content)
         {
             this.content = content;
+            this.GlaviDecorated();
+            this.ParagraphsDecorated();
+            this.SentencesDecorated();
         }
 
-        public List<string> ParagraphsDecorated(Func<string, string> SentenceOnNewLine)
+        private void GlaviDecorated()
         {
-            var pars = this.content.
-                  Split(new string[] { "\r\n" }, StringSplitOptions.None);
-
-            List<string> paragraphs = new List<string>();
-
-            for (int i = 0; i < pars.Length; i++)
-            {
-                var current = pars[i];
-                var builder = new StringBuilder();
-
-                current = SentenceOnNewLine(current);
-                if (current == "") continue;
-
-                builder.AppendLine("-------- " + i + " --------");
-
-                builder.Append(current);
-                var result = builder.ToString();
-                paragraphs.Add(result);
-            }
-
-            return paragraphs;
+            this.content.
+                  Split(new string[] { "\r\n\r\n\r\n" }, StringSplitOptions.None)
+                  .Where(glava => glava != "")
+                  .ToList()
+                  .ForEach(glava => this.glavi.Add(glava));
         }
 
-        
+        private void ParagraphsDecorated()
+        {
+            this.glavi.ForEach(glava =>
+            {
+                glava.Split(new string[] { "\r\n" }, StringSplitOptions.None)
+                  .Where(paragraph => paragraph.Trim() != "")
+                  .ToList()
+                  .ForEach(paragraph => this.paragraphs.Add(new Paragraph(paragraph).ToString()));
+            });
+        }
 
+        private void SentencesDecorated()
+        {
+            this.paragraphs.ForEach(paragraph =>
+            {
+                Regex.Split(paragraph, @"(?<=[\.!\?])\s+")
+                    .Select(sentence => sentence.Trim())
+                    .Where(x => !x.Contains("— "))
+                    .ToList()
+                    .ForEach(sentence => sentences.Add(new Sentence(sentence).ToString()));
+            });
+
+        }
     }
 }

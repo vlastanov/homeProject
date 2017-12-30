@@ -9,3 +9,14 @@ D:\SingleAPp\SingleAPp\obj\Debug\netcoreapp2.0\SingleAPp.AssemblyInfoInputs.cach
 D:\SingleAPp\SingleAPp\obj\Debug\netcoreapp2.0\SingleAPp.AssemblyInfo.cs
 D:\SingleAPp\SingleAPp\obj\Debug\netcoreapp2.0\SingleAPp.dll
 D:\SingleAPp\SingleAPp\obj\Debug\netcoreapp2.0\SingleAPp.pdb
+D:\homeProject\SingleAPp\bin\Debug\netcoreapp2.0\SingleAPp.deps.json
+D:\homeProject\SingleAPp\bin\Debug\netcoreapp2.0\SingleAPp.runtimeconfig.json
+D:\homeProject\SingleAPp\bin\Debug\netcoreapp2.0\SingleAPp.runtimeconfig.dev.json
+D:\homeProject\SingleAPp\bin\Debug\netcoreapp2.0\SingleAPp.dll
+D:\homeProject\SingleAPp\bin\Debug\netcoreapp2.0\SingleAPp.pdb
+D:\homeProject\SingleAPp\obj\Debug\netcoreapp2.0\SingleAPp.csprojResolveAssemblyReference.cache
+D:\homeProject\SingleAPp\obj\Debug\netcoreapp2.0\SingleAPp.csproj.CoreCompileInputs.cache
+D:\homeProject\SingleAPp\obj\Debug\netcoreapp2.0\SingleAPp.AssemblyInfoInputs.cache
+D:\homeProject\SingleAPp\obj\Debug\netcoreapp2.0\SingleAPp.AssemblyInfo.cs
+D:\homeProject\SingleAPp\obj\Debug\netcoreapp2.0\SingleAPp.dll
+D:\homeProject\SingleAPp\obj\Debug\netcoreapp2.0\SingleAPp.pdb
