@@ -673,11 +673,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "D:\\homeProject\\SingleAPp\\SingleAPp.csproj",
+      "projectUniqueName": "C:\\Users\\Emil\\homeProject\\SingleAPp\\SingleAPp.csproj",
       "projectName": "SingleAPp",
-      "projectPath": "D:\\homeProject\\SingleAPp\\SingleAPp.csproj",
+      "projectPath": "C:\\Users\\Emil\\homeProject\\SingleAPp\\SingleAPp.csproj",
       "packagesPath": "C:\\Users\\Emil\\.nuget\\packages\\",
-      "outputPath": "D:\\homeProject\\SingleAPp\\obj\\",
+      "outputPath": "C:\\Users\\Emil\\homeProject\\SingleAPp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

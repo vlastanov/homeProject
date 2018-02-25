@@ -10,7 +10,8 @@ namespace SingleAPp
     {
         static void Main(string[] args)
         {
-            string bookName = "Onore_dxo_Balzak_-_Velichie_i_padenie_na_kurtizankite_-5400-b";
+            //string bookName = "Onore_dxo_Balzak_-_Velichie_i_padenie_na_kurtizankite_-5400-b";
+            string bookName = "GreatFortunesHowTheyweremade";
 
             Обработка1(bookName);
             Обработка2(bookName);

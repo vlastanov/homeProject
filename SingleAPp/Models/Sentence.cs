@@ -58,10 +58,10 @@ namespace SingleAPp.Models
         private void НовРедСледЗапетая()
         {
             //string first = @"(?<=[,;:\.!\?])\s|(?<=\bи\b)\s|\s(?=\bне\b)|\s(?=\bтой\b)|\s(?=\bто\b)|\s(?=\bв\b)|\s(?=\bсъщо както\b)|(?<=\bче\b)\s|(?<=\bможе\b)\s|(?<=\bще\b)\s|(?<=\bе\b)\s|(?<=\bтях\b)\s|(?<=\bсе\b)\s|\s(?=\bтя\b)|(?<=\bВ този момент\b)\s";
-            string first = @"(?<=[,;:\.!\?])\s|(?<=\bи\b)\s|\s(?=\bне\b)|\s(?=\bтой\b)|\s(?=\bто\b)|\s(?=\bсъщо както\b)|(?<=\bче\b)\s|(?<=\bможе\b)\s|(?<=\bще\b)\s|(?<=\bтях\b)\s|(?<=\bсе\b)\s|\s(?=\bтя\b)|(?<=\bВ този момент\b)\s";
+            //string first = @"(?<=[,;:\.!\?])\s|(?<=\bи\b)\s|\s(?=\bне\b)|\s(?=\bтой\b)|\s(?=\bто\b)|\s(?=\bсъщо както\b)|(?<=\bче\b)\s|(?<=\bможе\b)\s|(?<=\bще\b)\s|(?<=\bтях\b)\s|(?<=\bсе\b)\s|\s(?=\bтя\b)|(?<=\bВ този момент\b)\s";
+            string first = @"(?<=[,;:\.!\?])\s";
 
-            string[] sens = Regex.Split(this.result,s first
-+ @"|(?<=\bразбера\b)\s|(?<=\bизясни\b)\s|\s(?=\bда\b)|\s(?=\bтам\b)");
+            string[] sens = Regex.Split(this.result,first);
             var sb = new StringBuilder();
             for (int i = 0; i < sens.Length; i++)
             {

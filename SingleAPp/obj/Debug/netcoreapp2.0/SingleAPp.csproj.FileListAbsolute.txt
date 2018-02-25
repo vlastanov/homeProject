@@ -20,3 +20,14 @@ D:\homeProject\SingleAPp\obj\Debug\netcoreapp2.0\SingleAPp.AssemblyInfoInputs.ca
 D:\homeProject\SingleAPp\obj\Debug\netcoreapp2.0\SingleAPp.AssemblyInfo.cs
 D:\homeProject\SingleAPp\obj\Debug\netcoreapp2.0\SingleAPp.dll
 D:\homeProject\SingleAPp\obj\Debug\netcoreapp2.0\SingleAPp.pdb
+C:\Users\Emil\homeProject\SingleAPp\obj\Debug\netcoreapp2.0\SingleAPp.csprojResolveAssemblyReference.cache
+C:\Users\Emil\homeProject\SingleAPp\obj\Debug\netcoreapp2.0\SingleAPp.csproj.CoreCompileInputs.cache
+C:\Users\Emil\homeProject\SingleAPp\obj\Debug\netcoreapp2.0\SingleAPp.AssemblyInfoInputs.cache
+C:\Users\Emil\homeProject\SingleAPp\obj\Debug\netcoreapp2.0\SingleAPp.AssemblyInfo.cs
+C:\Users\Emil\homeProject\SingleAPp\obj\Debug\netcoreapp2.0\SingleAPp.dll
+C:\Users\Emil\homeProject\SingleAPp\obj\Debug\netcoreapp2.0\SingleAPp.pdb
+C:\Users\Emil\homeProject\SingleAPp\bin\Debug\netcoreapp2.0\SingleAPp.deps.json
+C:\Users\Emil\homeProject\SingleAPp\bin\Debug\netcoreapp2.0\SingleAPp.runtimeconfig.json
+C:\Users\Emil\homeProject\SingleAPp\bin\Debug\netcoreapp2.0\SingleAPp.runtimeconfig.dev.json
+C:\Users\Emil\homeProject\SingleAPp\bin\Debug\netcoreapp2.0\SingleAPp.dll
+C:\Users\Emil\homeProject\SingleAPp\bin\Debug\netcoreapp2.0\SingleAPp.pdb
